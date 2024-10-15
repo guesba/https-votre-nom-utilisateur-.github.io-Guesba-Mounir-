@@ -1,0 +1,94 @@
+# Create a comprehensive HTML structure for the website with the specified content and layout.
+website_html_content = """
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guesba Mounir - Conception 3D</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #007BFF; color: white; padding: 20px; text-align: center; }
+        section { padding: 20px; margin: 10px; border: 1px solid #ccc; border-radius: 5px; }
+        h2 { color: #007BFF; }
+        footer { background-color: #f1f1f1; text-align: center; padding: 10px; position: relative; bottom: 0; width: 100%; }
+        .video-container { display: flex; justify-content: space-around; flex-wrap: wrap; }
+        .video-container iframe { width: 45%; height: 250px; margin: 10px; }
+        .project { margin-bottom: 20px; }
+        .project img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur le site de Guesba Mounir</h1>
+        <p>Spécialiste en conception 3D avec AutoCAD et Revit</p>
+    </header>
+    
+    <section>
+        <h2>À Propos</h2>
+        <p>Je suis Guesba Mounir, expert en conception 3D. Avec des années d'expérience, je crée des modèles architecturaux précis et innovants.</p>
+    </section>
+
+    <section>
+        <h2>Services</h2>
+        <p>Je propose des services de conception 3D adaptés à vos besoins, que ce soit pour des projets résidentiels ou commerciaux.</p>
+    </section>
+    
+    <section>
+        <h2>Projets</h2>
+        <div class="project">
+            <h3>Projet 1 : Villa Moderne</h3>
+            <img src="https://via.placeholder.com/800x400" alt="Villa Moderne">
+            <p>Description : Conception d'une villa moderne avec des matériaux durables.</p>
+        </div>
+        <div class="project">
+            <h3>Projet 2 : Bureau Commercial</h3>
+            <img src="https://via.placeholder.com/800x400" alt="Bureau Commercial">
+            <p>Description : Aménagement d'un espace de bureau commercial avec un design fonctionnel.</p>
+        </div>
+        <div class="project">
+            <h3>Projet 3 : Appartement Urban</h3>
+            <img src="https://via.placeholder.com/800x400" alt="Appartement Urban">
+            <p>Description : Création d'un appartement urbain avec une vue panoramique.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Tarification</h2>
+        <p>Mes tarifs sont flexibles et varient en fonction de la complexité des projets :</p>
+        <ul>
+            <li>Consultation Initiale : 100 €</li>
+            <li>Modélisation 3D : À partir de 500 €</li>
+            <li>Revisions Supplémentaires : 50 € par heure</li>
+            <li>Développement de Plans Techniques : 200 €</li>
+        </ul>
+        <p>Contactez-moi pour un devis personnalisé.</p>
+    </section>
+    
+    <section>
+        <h2>Vidéos Marketing</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Contact</h2>
+        <p>Email : guesba87@gmail.com</p>
+        <p>Téléphone : 0669327248</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Guesba Mounir. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
+"""
+
+# Save the comprehensive HTML content to a new file.
+website_file_path = "/mnt/data/Guesba_Mounir_Business_Website.html"
+with open(website_file_path, "w") as file:
+    file.write(website_html_content)
+
+website_file_path
